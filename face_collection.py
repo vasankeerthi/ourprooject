@@ -68,7 +68,7 @@ while True:
         # Unique name is given to each cropped face
 		#path = ("./dataset/User. " + str(face_id) + ' . ' +str(face_count) + ". jpg")
 		# Save cropped faces in specified path using imwrite built-in function
-		cv2.imwrite("./dataset/User. " + str(face_id) + ' . '+str(face_count) + ".jpg", gray)
+		cv2.imwrite("./dataset/User." + str(face_id) + '.'+str(face_count) + ".jpg", gray)
 		time.sleep(1)
 		#print("collecting faces",face_count)
 		
@@ -94,4 +94,3 @@ capture.release()
 cv2.destroyAllWindows()
 
 print("All cropped faces are saved in human_faces folder")
-
